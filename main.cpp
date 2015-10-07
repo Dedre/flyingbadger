@@ -40,7 +40,7 @@ int main()
 		{
 			cout <<"\n\nPress 'P' to play, 'E' to exit:";
 			cin >> choice;
-			toupper(choice);
+			
 			
 		}
 	}
@@ -52,7 +52,11 @@ int main()
 		case 'P': cout << "Choose an option: \n1. Create army \n2. Attack oponent \n3. Quit \n";
 			      cin >> option;
 			      break;
+		case 'p': cout << "Choose an option: \n1. Create army \n2. Attack oponent \n3. Quit \n";
+			      cin >> option;
+			      break;
 		case 'E' : exit(0);
+		case 'e' : exit(0);
 	}
 	
 	vector<Unit*> persons;
