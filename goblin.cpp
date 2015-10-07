@@ -4,14 +4,19 @@ Goblin::Goblin()
 {
 	Unit::setDamage(12);
 	Unit::setHealth(50);
+	Unit::setDescription("<(' ')>");
 }
 
-Unit* Goblin::clone(Unit& aUnit)
+Unit* Goblin::clone(/*Unit& aUnit*/)
 {
-	Unit* temp;
+	/*Unit* temp;
 	temp = new Goblin();
 	Unit::setHealth(aUnit.getHealth());
-	return temp;
+	return temp;*/
+	
+	//instead of above do this
+	
+	return new Goblin(*this);
 }
 
 void Goblin::attack(Unit& aUnit)
