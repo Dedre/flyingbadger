@@ -1,5 +1,5 @@
 #ifndef MAGICFACTORY_H
-#defineMAGICFACTORY_H
+#define MAGICFACTORY_H
 
 #include "unitfactory.h"
 
@@ -9,6 +9,6 @@ public:
 	Unit* createPlayer();
 	Unit* createMob();
 	
-}
+};
 
 #endif
