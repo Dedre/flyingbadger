@@ -7,10 +7,10 @@ class Ogre: public Monster
 {
 public:
 	Ogre();
-	Unit* clone(Unit&);
-	void attack(Unit&);
-	void takeDamage(int);	
+	virtual Unit* clone(/*Unit&*/); ////////changed three methods to virtual
+	virtual void attack(Unit&);//////////
+	virtual void takeDamage(int);//	
 	
-}
+};
 
 #endif
