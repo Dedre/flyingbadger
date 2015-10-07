@@ -1,4 +1,7 @@
 #include "unit.h"
+#include<iostream>
+#include<string>
+using namespace std;
 
 Unit::Unit()
 {
@@ -26,4 +29,14 @@ int Unit::getHealth()
 int Unit::getDamage()
 {
 	return damage;
+}
+
+void Unit::setDescription(string d)
+{
+	description = d;
+}
+
+string Unit :: getDescription()
+{
+	return description;
 }
