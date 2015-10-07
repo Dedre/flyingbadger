@@ -4,7 +4,7 @@ Mage::Mage()
 {
 	Unit::setDamage(5);
 	Unit::setHealth(80);
-	Unit::setDesctiption("_('+')_");
+	Unit::setDescription("_('+')_");
 }
 
 Unit* Mage::clone(/*Unit& aUnit*/)
