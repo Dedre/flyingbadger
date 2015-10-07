@@ -31,7 +31,7 @@ int main()
 	{
 		
 		
-		if(choice == 'P' || choice == 'E')
+		if(choice == 'P' || choice == 'E' || choice == 'p' || choice == 'e')
 		{
 			validChoice = true;
 			cout << " **********************\n" << endl;
