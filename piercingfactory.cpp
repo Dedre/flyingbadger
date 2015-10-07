@@ -8,7 +8,7 @@ Unit* PiercingFactory::createPlayer()
 	return temp;
 }
 
-Unit* PiercinggFactory::createMob()
+Unit* PiercingFactory::createMob()
 {
 	Goblin* temp = new Goblin();
 	return temp;
