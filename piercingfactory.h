@@ -8,6 +8,6 @@ class PiercingFactory: public UnitFactory
 public:
 	void createPlayer();
 	void createMob();
-}
+};
 
 #endif
