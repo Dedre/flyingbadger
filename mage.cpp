@@ -4,14 +4,19 @@ Mage::Mage()
 {
 	Unit::setDamage(5);
 	Unit::setHealth(80);
+	Unit::setDesctiption("_('+')_");
 }
 
-Unit* Mage::clone(Unit& aUnit)
+Unit* Mage::clone(/*Unit& aUnit*/)
 {
-	Unit* temp;
+	/*Unit* temp;
 	temp = new Mage();
 	Unit::setHealth(aUnit.getHealth());
-	return temp;
+	return temp;*/
+	
+	//instead of above do following
+	
+	return new Mage (*this);
 }
 
 void Mage::attack(Unit& aUnit)
