@@ -4,14 +4,19 @@ Ogre::Ogre()
 {
 	Unit::setDamage(5);
 	Unit::setHealth(120);
+	Unit::setDescription("=(OO)=");
 }
 
-Unit* Ogre::clone(Unit& aUnit)
+Unit* Ogre::clone(/*Unit& aUnit*/)
 {
-	Unit* temp;
+	/*Unit* temp;
 	temp = new Ogre();
 	Unit::setHealth(aUnit.getHealth());
-	return temp;
+	return temp;*/
+	
+	//instead of above do this
+	
+	return new Ogre (*this);
 }
 
 void Ogre::attack(Unit& aUnit)
