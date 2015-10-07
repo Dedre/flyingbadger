@@ -6,8 +6,8 @@
 class BludgeoningFactory: public UnitFactory
 {
 public:
-	void createPlayer();
-	void createMob();
-}
+	Unit* createPlayer(); ////////changed return type to Unit*
+	Unit* createMob();    //////
+};
 
 #endif
