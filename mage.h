@@ -7,9 +7,9 @@ class Mage: public Player
 {
 public:
 	Mage();
-	Unit* clone(Unit&);
-	void attack(Unit&);
-	void takeDamage(int);	
-}
+	virtual Unit* clone(/*Unit&*/);    //////changed all three methods to virtualS
+	virtual void attack(Unit&);    ///// 
+	virtual void takeDamage(int);//	
+};
 
 #endif
