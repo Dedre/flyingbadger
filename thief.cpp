@@ -4,14 +4,19 @@ Thief::Thief()
 {
 	Unit::setDamage(10);
 	Unit::setHealth(60);
+	Unit::setDescription("_('o')_");
 }
 
-Unit* Thief::clone(Unit& aUnit)
+Unit* Thief::clone(/*Unit& aUnit*/)
 {
-	Unit* temp;
+	/*Unit* temp;
 	temp = new Thief();
 	Unit::setHealth(aUnit.getHealth());
-	return temp;
+	return temp;*/
+	
+	//instead of above do this
+	
+	return new Thief(*this);
 }
 
 void Thief::attack(Unit& aUnit)
